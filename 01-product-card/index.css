@@ -1,1 +1,110 @@
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+body {
+    background-color: #F6F6F6;
+
+}
+.container-title {
+    margin: 40px 40px;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.juices {
+    display: flex;
+	justify-content: center;
+}
+
+.juice {
+    position: relative;
+    width: 380px;
+    height: 482px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+}
+
+.juice:not(:last-child) {
+    margin-right: 20px;
+}
+
+.juice__title {
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.juice__text {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    text-align: left;
+    height: 96px;
+}
+
+.juice__image{
+   border-radius: 10px 10px 0 0;
+}
+
+.juice__button {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 24px;
+    text-align: center;
+    color: #42940F;
+    width: 332px;
+    height: 48px;
+    border-radius: 12px;
+    border: 2px solid #42940F;
+    background-color: #FFFFFF;
+}
+
+.juice__button:disabled {
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #4E4E4E;
+    border: 2px solid #4E4E4E;
+    cursor: not-allowed;
+}
+
+.juice__button:hover:not(:disabled) {
+    background-color: #42940F;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.juice__button:active:not(:disabled) {
+    background-color: #1F5200;
+    color: #FFFFFF;
+    border: 2px solid #1F5200;
+}
+
+.juice__labels {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.juice__label {
+    display: inline-flex;
+    border-radius: 8px;
+    height: 24px;
+    padding: 8px 16px 0 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.juice__label.rose {
+    background-color: #FDCFF3;
+}
+
+.juice__label.gold {
+    background-color: #FFCF56;
+}
