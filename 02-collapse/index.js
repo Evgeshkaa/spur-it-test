@@ -1,4 +1,4 @@
-let collapsible = document.querySelector('.collapsible')
+let collapsible = document.querySelector('.collapsible');
 let button = collapsible.querySelector('.collapsible__button');
 let content = collapsible.querySelector('.collapsible__content');
 let buttonVisible = button.querySelector('.collapsible__action.collapsible__action--visible');
